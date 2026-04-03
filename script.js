@@ -10,6 +10,7 @@ const heroSwiper = new Swiper(".hero-swiper", {
         el: ".hero-swiper__pagination",
         clickable: true,
     },
+    resizeObserver: false,
 });
 
 const nav = document.querySelector(".nav");

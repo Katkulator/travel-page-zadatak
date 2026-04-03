@@ -133,7 +133,8 @@ ul {
 
 .hero {
     position: relative;
-    min-height: 880px;
+    height: 100vh;
+    min-height: 580px;
     color: var(--color-white);
     overflow: hidden;
 }
@@ -262,9 +263,10 @@ ul {
     transition: none !important;
 }
 
+.hero,
 .hero-swiper,
 .hero-slide {
-    min-height: 880px;
+    height: 880px;
 }
 
 .hero-swiper {
@@ -276,16 +278,28 @@ ul {
     position: relative;
 }
 
+.hero-slide--1,
+.hero-slide--2,
+.hero-slide--3 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .hero-slide--1 {
-    background: url("assets/images/hero-slide-1.jpg") lightgray 0 -4px / 100% 110.909% no-repeat;
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+        url("assets/images/hero-slide-1.jpg") 50% -4px / cover no-repeat;
 }
 
 .hero-slide--2 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("assets/images/hero-slide-2.jpg") lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+    url("assets/images/hero-slide-2.jpg") center center / cover no-repeat;
 }
 
 .hero-slide--3 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("assets/images/hero-slide-3.jpg") lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+    url("assets/images/hero-slide-3.jpg") center center / cover no-repeat;
 }
 
 .hero__content {
@@ -388,7 +402,7 @@ ul {
     .hero,
     .hero-swiper,
     .hero-slide {
-        min-height: 760px;
+        height: 760px;
     }
 
     .hero__title {
@@ -419,7 +433,7 @@ ul {
     .hero,
     .hero-swiper,
     .hero-slide {
-        min-height: 680px;
+        height: 680px;
     }
 
     .nav {
@@ -565,7 +579,7 @@ ul {
     .hero,
     .hero-swiper,
     .hero-slide {
-        min-height: 620px;
+        height: 620px;
     }
 
     .hero__title {
@@ -586,6 +600,10 @@ ul {
         height: 14px;
         background: rgba(255, 255, 255, 0.45);
         opacity: 1;
+    }
+
+    .hero-swiper__pagination .swiper-pagination-bullet-active {
+        background: var(--color-accent);
     }
 }
 
@@ -631,7 +649,7 @@ ul {
     .hero,
     .hero-swiper,
     .hero-slide {
-        min-height: 580px;
+        height: 580px;
     }
 
     .hero__title {

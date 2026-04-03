@@ -1,0 +1,19 @@
+:root {
+    --color-text: #222222;
+    --color-accent: #df6951;
+    --color-white: #ffffff;
+    --color-muted-bg: #fafafa;
+    --color-border: rgba(34, 34, 34, 0.1);
+
+    --font-body: "Inter";
+    --font-heading: "Poppins";
+
+    --container-max: 1520px;
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --shadow-card: 0 4px 40px 0 rgba(126, 126, 126, 0.15);
+
+    --transition-fast: 0.25s ease;
+    --transition-med: 0.4s ease;
+}

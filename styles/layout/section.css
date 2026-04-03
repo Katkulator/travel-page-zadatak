@@ -1,0 +1,25 @@
+.section {
+    padding: 164px 0;
+}
+
+.section--muted {
+    background: var(--color-muted-bg);
+}
+
+@media (max-width: 1199px) {
+    .section {
+        padding: 120px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        padding: 96px 0;
+    }
+}
+
+@media (max-width: 479px) {
+    .section {
+        padding: 80px 0;
+    }
+}

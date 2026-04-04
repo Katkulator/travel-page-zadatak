@@ -6,7 +6,7 @@
 .hero-swiper__pagination .swiper-pagination-bullet {
     width: 16px;
     height: 16px;
-    background: rgba(255, 255, 255, 0.45);
+    background: var(--color-white);
     opacity: 1;
 }
 
@@ -18,5 +18,6 @@
     .hero-swiper__pagination .swiper-pagination-bullet {
         width: 14px;
         height: 14px;
+        background: var(--color-white);
     }
 }

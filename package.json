@@ -1,0 +1,17 @@
+{
+  "name": "travel-page-zadatak",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "swiper": "^11.2.6"
+  },
+  "devDependencies": {
+    "vite": "^7.1.5"
+  }
+}

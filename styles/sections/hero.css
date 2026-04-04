@@ -36,32 +36,9 @@
 
 .hero-slide {
     position: relative;
-}
-
-.hero-slide--1,
-.hero-slide--2,
-.hero-slide--3 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.hero-slide--1 {
-    background:
-        linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
-        url("../../assets/images/hero/hero-slide-1.jpg") 50% -4px / cover no-repeat;
-}
-
-.hero-slide--2 {
-    background:
-        linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
-        url("../../assets/images/hero/hero-slide-2.jpg") center center / cover no-repeat;
-}
-
-.hero-slide--3 {
-    background:
-        linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
-        url("../../assets/images/hero/hero-slide-3.jpg") center center / cover no-repeat;
 }
 
 .hero__content {

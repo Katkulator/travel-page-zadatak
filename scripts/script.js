@@ -1,4 +1,16 @@
-import { offersData } from "./swiper-data.js";
+import { heroSlidesData, offersData } from "./swiper-data.js";
+
+const createHeroSlide = (slide) => `
+    <div
+        class="swiper-slide hero-slide"
+        style="
+            background-image:
+                linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+                url('${slide.image}');
+            background-position: ${slide.position};
+        "
+    ></div>
+`;
 
 const createOfferSlide = (offer) => `
     <div class="swiper-slide">
@@ -17,6 +29,13 @@ const createOfferSlide = (offer) => `
         </article>
     </div>
 `;
+
+const renderHeroSlides = () => {
+    const heroWrapper = document.querySelector("#hero-swiper-wrapper");
+    if (!heroWrapper) return;
+
+    heroWrapper.innerHTML = heroSlidesData.map(createHeroSlide).join("");
+};
 
 const renderOffers = () => {
     const offersWrapper = document.querySelector("#offers-swiper-wrapper");
@@ -70,6 +89,7 @@ const initSwipers = () => {
     });
 };
 
+renderHeroSlides();
 renderOffers();
 initSwipers();
 

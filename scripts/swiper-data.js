@@ -1,3 +1,18 @@
+export const heroSlidesData = [
+    {
+        image: "assets/images/hero/hero-slide-1.jpg",
+        position: "50% -4px",
+    },
+    {
+        image: "assets/images/hero/hero-slide-2.jpg",
+        position: "center center",
+    },
+    {
+        image: "assets/images/hero/hero-slide-3.jpg",
+        position: "center center",
+    },
+];
+
 export const offersData = [
     {
         title: "Switzerland",

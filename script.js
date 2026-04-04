@@ -13,6 +13,30 @@ const heroSwiper = new Swiper(".hero-swiper", {
     resizeObserver: false,
 });
 
+const offersSwiper = new Swiper(".offers-swiper", {
+    loop: true,
+    speed: 700,
+    spaceBetween: 40,
+    pagination: {
+        el: ".offers-swiper__pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+    },
+});
+
 const nav = document.querySelector(".nav");
 const navToggle = document.querySelector(".nav__toggle");
 

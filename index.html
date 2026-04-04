@@ -21,14 +21,12 @@
 <body>
 <header class="hero">
   <div class="hero__overlay"></div>
-
   <div class="hero__topbar">
     <div class="container">
       <nav class="nav">
         <a href="#" class="logo" aria-label="Travel home">
           <img src="assets/logo.svg" alt="Travel" class="logo__image">
         </a>
-
         <button
             class="nav__toggle"
             type="button"
@@ -39,7 +37,6 @@
           <span></span>
           <span></span>
         </button>
-
         <ul class="nav__list">
           <li><a href="#home">HOME</a></li>
           <li><a href="#promotion">ABOUT</a></li>
@@ -69,6 +66,42 @@
     <div class="hero-swiper__pagination swiper-pagination"></div>
   </div>
 </header>
+
+<main>
+  <section class="promotion section" id="promotion">
+    <div class="container promotion__grid">
+      <div class="promotion__content reveal">
+        <p class="section-label">PROMOTION</p>
+        <h2 class="section-title section-title--left promotion__title">
+          We Provide You Best<br />
+          Europe Sightseeing Tours
+        </h2>
+        <p class="promotion__text">
+          You can seamlessly plan your trips, whether it's booking comfortable
+          accommodations or discovering exciting activities. We're dedicated to providing
+          you with a wide range of options and the best deals to make your travel dreams a reality.
+        </p>
+        <a href="#" class="btn btn--primary">LEARN MORE</a>
+      </div>
+
+      <div class="promotion__visual reveal">
+        <div class="promotion__shape">
+          <img
+              src="assets/images/promotion-shape.png"
+              alt=""
+              aria-hidden="true"
+          />
+        </div>
+        <div class="promotion__image">
+          <img
+              src="assets/images/promotion-main.png"
+              alt="Travel destination scenery"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>

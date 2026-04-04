@@ -30,7 +30,7 @@ const offersSwiper = new Swiper(".offers-swiper", {
             slidesPerView: 2,
             spaceBetween: 24,
         },
-        1200: {
+        1440: {
             slidesPerView: 3,
             spaceBetween: 40,
         },

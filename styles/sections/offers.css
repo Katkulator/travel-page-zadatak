@@ -1,5 +1,6 @@
 .offers {
     overflow: hidden;
+    padding-top: 120px;
 }
 
 .offers__title {
@@ -7,7 +8,7 @@
 }
 
 .offers-swiper {
-    overflow: visible;
+    overflow: hidden;
 }
 
 .offers-swiper .swiper-slide {

@@ -22,7 +22,7 @@
 }
 
 .section-title--left {
-    max-width: 870px;
+    width: min(100%, 870px);
 }
 
 .section-title--center {

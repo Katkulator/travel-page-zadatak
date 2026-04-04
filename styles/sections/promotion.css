@@ -1,15 +1,24 @@
+.promotion .container {
+    width: min(calc(100% - 400px), var(--container-max));
+}
+
 .promotion__grid {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: minmax(0, 870px) minmax(0, 610px);
     gap: 42px;
     align-items: center;
-    margin-left: 200px;
-    margin-right: 200px;
+    justify-content: space-between;
+}
+
+.promotion__content {
+    width: 870px;
+    max-width: 100%;
 }
 
 .promotion__title {
+    width: 870px;
+    max-width: 100%;
     margin-top: 8px;
-    white-space: nowrap;
 }
 
 .promotion__text {
@@ -28,8 +37,12 @@
 .promotion__visual {
     position: relative;
     display: flex;
+    width: 610px;
+    max-width: 100%;
+    height: 480px;
     align-items: center;
     justify-content: center;
+    justify-self: end;
 }
 
 .promotion__shape {
@@ -38,8 +51,6 @@
 }
 
 .promotion__shape img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -59,14 +70,59 @@
     object-fit: cover;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
+    .promotion__visual {
+        display: none;
+    }
+
     .promotion__grid {
         grid-template-columns: 1fr;
-        gap: 56px;
+        justify-items: center;
     }
 
     .promotion__content {
+        width: 100%;
         max-width: 870px;
+        text-align: center;
+    }
+
+    .promotion__title {
+        width: 100%;
+        max-width: 870px;
+    }
+
+    .promotion__text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .promotion__content .btn {
+        display: inline-flex;
+    }
+}
+
+@media (max-width: 1199px) {
+    .promotion .container {
+        width: min(100% - 64px, var(--container-max));
+    }
+
+    .promotion__grid {
+        grid-template-columns: 1fr;
+        gap: 56px;
+        justify-content: stretch;
+    }
+
+    .promotion__content {
+        width: 100%;
+        max-width: 870px;
+    }
+
+    .promotion__title {
+        width: 100%;
+    }
+
+    .promotion__visual {
+        justify-self: start;
     }
 
     .promotion__visual {
@@ -75,6 +131,10 @@
 }
 
 @media (max-width: 767px) {
+    .promotion .container {
+        width: min(100% - 40px, var(--container-max));
+    }
+
     .promotion__text {
         font-size: 18px;
         line-height: 24px;
@@ -96,6 +156,10 @@
 }
 
 @media (max-width: 479px) {
+    .promotion .container {
+        width: min(100% - 32px, var(--container-max));
+    }
+
     .promotion__visual {
         min-height: 340px;
     }

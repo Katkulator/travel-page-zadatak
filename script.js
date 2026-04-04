@@ -15,8 +15,9 @@ const heroSwiper = new Swiper(".hero-swiper", {
 
 const offersSwiper = new Swiper(".offers-swiper", {
     loop: true,
-    speed: 700,
+    speed: 1000,
     spaceBetween: 40,
+    slidesPerGroup: 1,
     pagination: {
         el: ".offers-swiper__pagination",
         clickable: true,
@@ -24,14 +25,17 @@ const offersSwiper = new Swiper(".offers-swiper", {
     breakpoints: {
         0: {
             slidesPerView: 1,
+            slidesPerGroup: 1,
             spaceBetween: 20,
         },
         768: {
             slidesPerView: 2,
+            slidesPerGroup: 2,
             spaceBetween: 24,
         },
         1440: {
             slidesPerView: 3,
+            slidesPerGroup: 3,
             spaceBetween: 40,
         },
     },

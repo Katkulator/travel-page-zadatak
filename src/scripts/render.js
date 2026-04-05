@@ -1,6 +1,7 @@
 import starIcon from "../../assets/icons/star.svg";
 
 import destinationsPartial from "../partials/destinations.html?raw";
+import footerPartial from "../partials/footer.html?raw";
 import heroPartial from "../partials/hero.html?raw";
 import offersPartial from "../partials/offers.html?raw";
 import promotionPartial from "../partials/promotion.html?raw";
@@ -75,6 +76,7 @@ export const renderApp = () => {
             ${destinationsPartial}
             ${storiesPartial}
         </main>
+        ${footerPartial}
     `;
 };
 

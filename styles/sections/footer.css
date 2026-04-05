@@ -1,5 +1,6 @@
 .footer {
     position: relative;
+    min-height: 600px;
     padding: 152px 0 96px;
     overflow: hidden;
 }
@@ -7,9 +8,8 @@
 .footer__bg {
     position: absolute;
     right: 0;
-    top: 36px;
-    width: min(788px, 45vw);
-    height: auto;
+    bottom: -150px;
+    width: 788px;
     mix-blend-mode: multiply;
     pointer-events: none;
     opacity: 0.7;
@@ -17,6 +17,7 @@
 }
 
 .footer__bg img {
+    display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -26,7 +27,7 @@
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr 0.8fr 1.2fr;
+    grid-template-columns: 1.75fr 0.8fr 0.8fr 1.2fr;
     gap: 40px;
     align-items: start;
 }
@@ -146,7 +147,7 @@
 
 @media (max-width: 479px) {
     .footer__bg {
-        width: 90vw;
+        width: 788px;
     }
 
     .footer__title {

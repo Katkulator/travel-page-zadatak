@@ -15,96 +15,12 @@
     height: auto;
 }
 
-.offer-card {
-    display: flex;
+.offers__card {
     height: 100%;
-    padding: 32px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    border-radius: 12px;
-    background: var(--color-white);
-    box-shadow: 0 4px 40px 0 rgba(126, 126, 126, 0.15);
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
 }
 
-.offer-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 40px rgba(126, 126, 126, 0.18);
-}
-
-.offer-card__image {
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #ddd;
+.offers__card .travel-card__image {
     aspect-ratio: 416 / 260;
-}
-
-.offer-card__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.offer-card:hover .offer-card__image img {
-    transform: scale(1.03);
-}
-
-.offer-card__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
-}
-
-.offer-card__title {
-    margin: 0;
-    color: var(--color-text);
-    font-family: var(--font-heading);
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-}
-
-.offer-card__text {
-    margin: 0;
-    align-self: stretch;
-    color: var(--color-text);
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.offer-card__meta {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-
-.offer-card__price,
-.offer-card__rating {
-    color: var(--color-text);
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    text-transform: capitalize;
-}
-
-.offer-card__rating {
-    color: var(--color-accent);
 }
 
 .offers-swiper__pagination.swiper-pagination {
@@ -130,36 +46,9 @@
     }
 }
 
-@media (max-width: 1199px) {
-    .offer-card__title {
-        font-size: 32px;
-        line-height: 36px;
-    }
-
-    .offer-card__text {
-        font-size: 18px;
-        line-height: 24px;
-    }
-}
-
 @media (max-width: 767px) {
     .offers__title {
         margin-bottom: 40px;
-    }
-
-    .offer-card {
-        padding: 24px;
-        gap: 20px;
-    }
-
-    .offer-card__title {
-        font-size: 28px;
-        line-height: 32px;
-    }
-
-    .offer-card__text {
-        font-size: 16px;
-        line-height: 22px;
     }
 
     .offers-swiper__pagination.swiper-pagination {
@@ -168,15 +57,6 @@
 }
 
 @media (max-width: 479px) {
-    .offer-card {
-        padding: 20px;
-    }
-
-    .offer-card__title {
-        font-size: 24px;
-        line-height: 28px;
-    }
-
     .offers-swiper__pagination .swiper-pagination-bullet {
         width: 14px;
         height: 14px;

@@ -7,10 +7,12 @@
 @import url("./components/buttons.css");
 @import url("./components/nav.css");
 @import url("./components/section-heading.css");
+@import url("./components/travel-card.css");
 
 @import url("./sections/hero.css");
 @import url("./sections/promotion.css");
 @import url("./sections/offers.css");
+@import url("./sections/destinations.css");
 
 @import url("./utilities/animations.css");
 

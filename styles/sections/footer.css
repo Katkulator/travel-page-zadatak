@@ -8,7 +8,7 @@
 .footer__bg {
     position: absolute;
     right: 0;
-    bottom: -150px;
+    bottom: 0;
     width: 788px;
     mix-blend-mode: multiply;
     pointer-events: none;
@@ -112,12 +112,23 @@
 
 @media (max-width: 1199px) {
     .footer {
-        padding: 120px 0 80px;
+        min-height: auto;
+        padding: 104px 0 80px;
     }
 
     .footer__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 32px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 40px 32px;
+    }
+
+    .footer__brand {
+        grid-column: 1 / -1;
+        max-width: 360px;
+    }
+
+    .footer__newsletter {
+        grid-column: 1 / -1;
+        max-width: 480px;
     }
 }
 
@@ -128,6 +139,12 @@
 
     .footer__grid {
         grid-template-columns: 1fr;
+    }
+
+    .footer__brand,
+    .footer__newsletter {
+        grid-column: auto;
+        max-width: none;
     }
 
     .newsletter-form {

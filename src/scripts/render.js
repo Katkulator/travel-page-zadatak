@@ -1,5 +1,3 @@
-import promotionMainImage from "../../assets/images/promotion/promotion-main.png";
-import promotionShapeImage from "../../assets/images/promotion/promotion-shape.png";
 import starIcon from "../../assets/icons/star.svg";
 
 import destinationsPartial from "../partials/destinations.html?raw";
@@ -7,10 +5,6 @@ import heroPartial from "../partials/hero.html?raw";
 import offersPartial from "../partials/offers.html?raw";
 import promotionPartial from "../partials/promotion.html?raw";
 import { destinationsData, heroSlidesData, offersData } from "./swiper-data.js";
-
-const renderedPromotionPartial = promotionPartial
-    .replace("{{promotionShapeImage}}", promotionShapeImage)
-    .replace("{{promotionMainImage}}", promotionMainImage);
 
 const createHeroSlide = (slide) => `
     <div
@@ -75,7 +69,7 @@ export const renderApp = () => {
     app.innerHTML = `
         ${heroPartial}
         <main>
-            ${renderedPromotionPartial}
+            ${promotionPartial}
             ${offersPartial}
             ${destinationsPartial}
         </main>

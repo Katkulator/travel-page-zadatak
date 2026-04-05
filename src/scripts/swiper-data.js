@@ -55,7 +55,7 @@ export const offersData = [
     },
     {
         title: "Rome",
-        description: "Discover ancient history and vibrant street life in the Eternal City.",
+        description: "Rome, the eternal city, where ancient ruins stand testament to a rich history.",
         image: romeImage,
         alt: "Rome city view",
         price: "1,100 $",

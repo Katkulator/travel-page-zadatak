@@ -1,5 +1,6 @@
 import promotionMainImage from "../../assets/images/promotion/promotion-main.png";
 import promotionShapeImage from "../../assets/images/promotion/promotion-shape.png";
+import starIcon from "../../assets/icons/star.svg";
 
 import destinationsPartial from "../partials/destinations.html?raw";
 import heroPartial from "../partials/hero.html?raw";
@@ -36,7 +37,10 @@ const createTravelCard = (item, { cardClassName = "", metaFirst = true } = {}) =
     const metaMarkup = `
         <div class="travel-card__meta">
             <span class="travel-card__price">${item.price}</span>
-            <span class="travel-card__rating">★ ${item.rating}</span>
+            <span class="travel-card__rating">
+                <img src="${starIcon}" alt="Star Icon" aria-hidden="true" />
+                <span>${item.rating}</span>
+            </span>
         </div>
     `;
 

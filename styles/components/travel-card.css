@@ -63,7 +63,16 @@
 }
 
 .travel-card__rating {
-    color: var(--color-accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.travel-card__rating img {
+    width: 17px;
+    height: 16px;
+    display: block;
+    flex-shrink: 0;
 }
 
 .travel-card__title {

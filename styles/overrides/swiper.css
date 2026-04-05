@@ -3,21 +3,22 @@
     z-index: 5;
 }
 
-.hero-swiper__pagination .swiper-pagination-bullet {
+.hero-swiper__pagination .swiper-pagination-bullet,
+.offers-swiper__pagination .swiper-pagination-bullet {
     width: 16px;
     height: 16px;
-    background: var(--color-white);
     opacity: 1;
 }
 
-.hero-swiper__pagination .swiper-pagination-bullet-active {
+.hero-swiper__pagination .swiper-pagination-bullet-active,
+.offers-swiper__pagination .swiper-pagination-bullet-active {
     background: var(--color-accent);
 }
 
 @media (max-width: 479px) {
-    .hero-swiper__pagination .swiper-pagination-bullet {
+    .hero-swiper__pagination .swiper-pagination-bullet,
+    .offers-swiper__pagination .swiper-pagination-bullet {
         width: 14px;
         height: 14px;
-        background: var(--color-white);
     }
 }

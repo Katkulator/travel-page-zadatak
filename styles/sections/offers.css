@@ -1,6 +1,7 @@
 .offers {
     overflow: hidden;
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .offers__title {
@@ -27,17 +28,13 @@
     position: static;
     margin-top: 64px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .offers-swiper__pagination .swiper-pagination-bullet {
-    width: 16px;
-    height: 16px;
-    background: #d9d9d9;
-    opacity: 1;
-}
-
-.offers-swiper__pagination .swiper-pagination-bullet-active {
-    background: var(--color-accent);
+    background: var(--color-pagination-muted);
 }
 
 @media (max-width: 1439px) {
@@ -58,7 +55,6 @@
 
 @media (max-width: 479px) {
     .offers-swiper__pagination .swiper-pagination-bullet {
-        width: 14px;
-        height: 14px;
+        background: var(--color-pagination-muted);
     }
 }

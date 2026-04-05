@@ -4,6 +4,7 @@ import destinationsPartial from "../partials/destinations.html?raw";
 import heroPartial from "../partials/hero.html?raw";
 import offersPartial from "../partials/offers.html?raw";
 import promotionPartial from "../partials/promotion.html?raw";
+import storiesPartial from "../partials/stories.html?raw";
 import { destinationsData, heroSlidesData, offersData } from "./swiper-data.js";
 
 const createHeroSlide = (slide) => `
@@ -72,6 +73,7 @@ export const renderApp = () => {
             ${promotionPartial}
             ${offersPartial}
             ${destinationsPartial}
+            ${storiesPartial}
         </main>
     `;
 };

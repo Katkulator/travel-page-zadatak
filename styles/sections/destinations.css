@@ -13,9 +13,7 @@
 }
 
 .destinations__card .travel-card__image {
-    height: 340px;
-    flex-shrink: 0;
-    align-self: stretch;
+    aspect-ratio: 416 / 340;
 }
 
 @media (max-width: 1439px) {
@@ -44,13 +42,4 @@
         min-height: auto;
     }
 
-    .destinations__card .travel-card__image {
-        height: 280px;
-    }
-}
-
-@media (max-width: 479px) {
-    .destinations__card .travel-card__image {
-        height: 240px;
-    }
 }

@@ -63,6 +63,8 @@
 }
 
 .footer__list a {
+    position: relative;
+    display: inline-block;
     font-family: var(--font-body), sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -71,9 +73,27 @@
     transition: color var(--transition-fast);
 }
 
+.footer__list a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-fast);
+}
+
 .footer__list a:hover,
 .footer__list a:focus-visible {
     color: var(--color-accent);
+}
+
+.footer__list a:hover::after,
+.footer__list a:focus-visible::after {
+    transform: scaleX(1);
 }
 
 .newsletter-form {

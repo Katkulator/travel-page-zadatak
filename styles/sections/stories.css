@@ -69,6 +69,10 @@
 }
 
 @media (max-width: 767px) {
+    .stories__content {
+        padding-inline: 16px;
+    }
+
     .stories__title {
         margin-bottom: 40px;
     }

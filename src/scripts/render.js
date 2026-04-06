@@ -6,7 +6,7 @@ import heroPartial from "../partials/hero.html?raw";
 import offersPartial from "../partials/offers.html?raw";
 import promotionPartial from "../partials/promotion.html?raw";
 import storiesPartial from "../partials/stories.html?raw";
-import { destinationsData, heroSlidesData, offersData } from "./swiper-data.js";
+import { destinationsData, heroSlidesData, offersData } from "./content-data.js";
 
 const createHeroSlide = (slide) => `
     <div

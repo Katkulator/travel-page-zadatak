@@ -20,6 +20,18 @@
     height: 100%;
 }
 
+.offers__card .travel-card__content {
+    gap: 0;
+}
+
+.offers__card .travel-card__title {
+    margin-bottom: 8px;
+}
+
+.offers__card .travel-card__text {
+    margin-bottom: 16px;
+}
+
 .offers__card .travel-card__image {
     aspect-ratio: 416 / 340;
 }

@@ -12,6 +12,18 @@
     min-height: 620px;
 }
 
+.destinations__card .travel-card__content {
+    gap: 0;
+}
+
+.destinations__card .travel-card__meta {
+    margin-bottom: 16px;
+}
+
+.destinations__card .travel-card__title {
+    margin-bottom: 8px;
+}
+
 .destinations__card .travel-card__image {
     aspect-ratio: 416 / 340;
 }

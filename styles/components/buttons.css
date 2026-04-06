@@ -9,7 +9,7 @@
     font-size: 16px;
     font-style: normal;
     line-height: 20px;
-    letter-spacing: 1.5px;
+    letter-spacing: 10%;
     transition:
             transform var(--transition-fast),
             box-shadow var(--transition-fast),
@@ -26,5 +26,5 @@
 .btn--primary:hover,
 .btn--primary:focus-visible {
     transform: translateY(-2px);
-    box-shadow: 0 12px 28px rgba(223, 105, 81, 0.25);
+    box-shadow: 0 12px 28px var(--color-accent-shadow);
 }

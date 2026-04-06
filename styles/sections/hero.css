@@ -11,7 +11,11 @@
     inset: 0;
     z-index: 1;
     background:
-            linear-gradient(to bottom, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.28));
+            linear-gradient(
+                to bottom,
+                var(--color-hero-overlay-start),
+                var(--color-hero-overlay-end)
+            );
     pointer-events: none;
 }
 
@@ -62,7 +66,7 @@
     font-size: 80px;
     font-weight: 700;
     line-height: 76px;
-    letter-spacing: -1.6px;
+    letter-spacing: -2%;
 }
 
 .hero__eyebrow {
@@ -71,7 +75,7 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    letter-spacing: 1.6px;
+    letter-spacing: 10%;
     text-transform: uppercase;
 }
 
@@ -115,14 +119,12 @@
         margin-bottom: 16px;
         font-size: 14px;
         line-height: 18px;
-        letter-spacing: 1.4px;
     }
 
     .hero__title {
         width: min(100%, 640px);
         font-size: 44px;
         line-height: 46px;
-        letter-spacing: -0.88px;
     }
 }
 
@@ -162,6 +164,5 @@
     .hero__eyebrow {
         font-size: 12px;
         line-height: 16px;
-        letter-spacing: 1.2px;
     }
 }

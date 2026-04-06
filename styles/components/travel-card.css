@@ -14,14 +14,13 @@
 
 .travel-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 40px rgba(126, 126, 126, 0.18);
+    box-shadow: 0 10px 40px var(--shadow-card);
 }
 
 .travel-card__image {
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
-    background: #ddd;
 }
 
 .travel-card__image img {

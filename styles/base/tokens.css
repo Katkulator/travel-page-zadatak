@@ -1,10 +1,15 @@
 :root {
     --color-text: #222222;
     --color-accent: #df6951;
+    --color-accent-shadow: #df695140;
     --color-white: #ffffff;
+    --color-black: #000000;
     --color-pagination-muted: #d9d9d9;
     --color-muted-bg: #fafafa;
-    --color-border: rgba(34, 34, 34, 0.1);
+    --color-border: #2222221a;
+    --color-hero-overlay-start: #00000038;
+    --color-hero-overlay-end: #00000047;
+    --color-hero-slide-overlay: #00000033;
 
     --font-body: "Inter";
     --font-heading: "Poppins";
@@ -13,7 +18,7 @@
 
     --radius-sm: 8px;
     --radius-md: 12px;
-    --shadow-card: 0 4px 40px 0 rgba(126, 126, 126, 0.15);
+    --shadow-card: 0 4px 40px 0 #7e7e7e26;
 
     --transition-fast: 0.25s ease;
     --transition-med: 0.4s ease;

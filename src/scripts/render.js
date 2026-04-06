@@ -13,7 +13,11 @@ const createHeroSlide = (slide) => `
         class="swiper-slide hero-slide"
         style="
             background-image:
-                linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+                linear-gradient(
+                    0deg,
+                    var(--color-hero-slide-overlay),
+                    var(--color-hero-slide-overlay)
+                ),
                 url('${slide.image}');
             background-position: ${slide.position};
         "

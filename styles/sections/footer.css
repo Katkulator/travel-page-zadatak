@@ -183,10 +183,6 @@
 }
 
 @media (max-width: 479px) {
-    .footer__bg {
-        width: 788px;
-    }
-
     .footer__title {
         font-size: 18px;
     }

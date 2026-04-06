@@ -64,9 +64,3 @@
         margin-top: 32px;
     }
 }
-
-@media (max-width: 479px) {
-    .offers-swiper__pagination .swiper-pagination-bullet {
-        background: var(--color-pagination-muted);
-    }
-}
